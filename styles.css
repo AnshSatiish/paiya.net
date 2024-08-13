@@ -191,7 +191,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%; /* Ensure cards take full width of grid column */
     margin: 0; /* Remove margin as grid will handle spacing */
     text-align: center;
      transition: transform 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
@@ -204,7 +203,7 @@ main {
 }
 
 .restaurant-image {
-    width: 100%;
+    width: 700px;
     height: 300px; /* Set a fixed height for all images */
     object-fit: cover; /* Ensure images cover the entire area without distortion */
     border-radius: 10px;
