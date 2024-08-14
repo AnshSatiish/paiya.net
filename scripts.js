@@ -8,19 +8,19 @@
 
     const pages = [
         // Sports Pages
-        { title: 'basketball', url: 'paiya.net/sports/basketball.html' },
-        { title: 'football', url: 'paiya.net/sports/football.html' },
-        { title: 'golf', url: 'paiya.net/sports/golf.html' },
-        { title: 'padel', url: 'paiya.net/sports/padel.html' },
-        { title: 'swimming', url: 'paiya.net/sports/swimming.html' },
-        { title: 'tennis', url: 'paiya.net/sports/tennis.html' },
+        { title: 'basketball', url: 'sports/basketball.html' },
+        { title: 'football', url: 'sports/football.html' },
+        { title: 'golf', url: 'sports/golf.html' },
+        { title: 'padel', url: 'sports/padel.html' },
+        { title: 'swimming', url: 'sports/swimming.html' },
+        { title: 'tennis', url: 'sports/tennis.html' },
         // Clubs Pages
-        { title: 'clubs', url: 'paiya.net/clubs/breweries.html' },
+        { title: 'clubs', url: 'clubs/breweries.html' },
         // Museums Pages
-        { title: 'art museums', url: 'paiya.net/museums/artmuseums.html' },
-        { title: 'children museums', url: 'paiya.net/museums/childrenmuseums.html' },
-        { title: 'history museums', url: 'paiya.net/museums/historymuseums.html' },
-        { title: 'science museums', url: 'paiya.net/museums/sciencemuseums.html' },
+        { title: 'art museums', url: 'museums/artmuseums.html' },
+        { title: 'children museums', url: 'museums/childrenmuseums.html' },
+        { title: 'history museums', url: 'museums/historymuseums.html' },
+        { title: 'science museums', url: 'museums/sciencemuseums.html' },
         // Parks Pages
         { title: 'city parks', url: 'paiya.net/parks/cityparks.html' },
         { title: 'national parks', url: 'paiya.net/parks/nationalparks.html' },
