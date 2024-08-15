@@ -35,14 +35,14 @@
         { title: 'middle eastern', url: 'paiya.net/restaurants/middleeastern.html' }
     ];
     const searchMapping = {
-        'football': 'sports/football.html',
-        'terrains de football': 'sports/football.html',
-        'basketball': 'sports/basketball.html',
-        'terrains de basketball': 'sports/basketball.html',
+        'football': 'paiya.net/sports/football.html',
+        'terrains de football':'paiya.net/sports/football.html',
+        'basketball': 'paiya.net/sports/basketball.html',
+        'terrains de basketball': 'paiya.net/sports/basketball.html',
         'restaurants': 'paiya.net/restaurants/european.html',
         'restaurant europeen': 'paiya.net/restaurants/european.html',
-        'clubs': 'clubs/breweries.html',
-        'malls': 'paiya.net/malls.html'
+        'clubs': 'paiya.net/clubs/breweries.html',
+        'malls': 'paiya.net/shopping/malls.html'
     };
 
     const fuse = new Fuse(pages, options);
