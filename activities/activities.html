@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="malls_title">Malls</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="menu-toggle" id="mobileMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <a href="../index.html"> <img alt="Paiya.net logo" src="../images/imagepaiya.net.png" class="logo"></a>
+            <div class="search-container">
+                <input type="text" id="searchBar" placeholder="Rechercher des lieux..." data-translate="search_placeholder">
+            </div>
+        </div>
+        <nav class="hidden">
+            <div class="nav-header">
+                <span class="close-menu">&times;</span>
+            </div>
+                <ul class="menu">
+                    <li class="menu-item">Restaurants
+                        <ul class="dropdown">
+                          <a href="../restaurants/european.html"> <li data-translate="european">Européen</li></a> 
+                          <a href="../restaurants/asian.html"><li data-translate="asian">Asiatique</li></a> 
+                          <a href="../restaurants/desserts.html"><li data-translate="desserts">Desserts</li></a>
+                          <a href="../restaurants/indian.html"><li data-translate="indian">Indien</li></a> 
+                          <a href="../restaurants/middleeastern.html"><li data-translate="middleeastern">Moyen-Oriental</li></a> 
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="../shopping/malls.html" data-translate="shopping">Shopping</a></li>
+                    <li class="menu-item">Sports
+                        <ul class="dropdown">
+                            <a href="../sports/football.html"> <li data-translate="football">Football</li></a> 
+                            <a href="../sports/basketball.html"> <li data-translate="basketball">Basketball</li></a> 
+                            <a href="../sports/tennis.html"> <li data-translate="tennis">Tennis</li></a> 
+                            <a href="../sports/golf.html"> <li data-translate="golf">Golf</li></a> 
+                            <a href="../sports/padel.html"> <li data-translate="padel">Padel</li></a> 
+                            <a href="../sports/swimming.html"> <li data-translate="swimming">Natation</li></a> 
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="../clubs/breweries.html" data-translate="clubs">Clubs</a></li>
+                    <li class="menu-item"><a href="../museums/artmuseums.html" data-translate="museums">Musées</a></li>
+                    <li class="menu-item">Activités de Divertissement
+                        <ul class="dropdown">
+                            <a href="../activities/cinemas.html"> <li data-translate="football">Expériences Cinématographiques & Écran</li></a> 
+                            <a href="../activities/aventure.html"> <li data-translate="basketball">Action & Aventure</li></a> 
+                            <a href="../activities/activities.html"> <li data-translate="tennis"> Activités Créatives</li></a> 
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h1 data-translate="malls">Activités de Divertissement</h1>
+        <section class="content">
+            <article class="restaurant-card">
+                <img src="../images/activities/superkart.jpeg" alt="Abidjan Mall" class="restaurant-image">
+                <div class="restaurant-info">
+                    <div class="restaurant-header">
+                        <span class="restaurant-category" data-translate="mall_category">Activités de Divertissement</span>
+                        <h2 class="restaurant-name">SuperKart ABJ</h2>
+                    </div>
+                    <p class="restaurant-location">Abidjan, Côte d'Ivoire</p>
+                    <p class="restaurant-contact"><i class="fas fa-globe"></i> <a href="https://www.instagram.com/superkart_ci/?hl=en" data-translate="visit_website">Visitez le site Web</a></p>
+                    <p class="restaurant-contact"><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/dir//4585+Abidjan+zone+3,+C%C3%B4te+d%E2%80%99Ivoire/@5.2943985,-4.0745543,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0xfc1e931fad71c3b:0x648d88ad9c4a92ac!2m2!1d-3.9921523!2d5.2944039?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D" data-translate="view_on_google_maps">Voir sur Google Maps</a></p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Paiya.net. Tous droits réservés.</p>
+            <a href="https://www.instagram.com/paiya.net_/" target="_blank">
+                <img src="../images/ig.png" alt="Instagram Logo" class="instagram-logo">
+            </a>
+        </div>
+    </footer>
+    <script src="../scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+</body>
+</html>
