@@ -13,8 +13,6 @@ body {
     background: url('images/background.jpg') no-repeat fixed center center;
     background-size: cover;
     color: #ffffff;
-    overflow-y: scroll;
-    transition: background-image 1s ease-in-out; /* Smooth transition for background changes */
 }
 
 
