@@ -1,5 +1,4 @@
-﻿
-﻿document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     // Initialize Fuse.js for search functionality
     const options = {
         includeScore: true,
@@ -9,42 +8,35 @@
 
     const pages = [
         // Sports Pages
-        { title: 'basketball', url: 'paiya.net/sports/basketball.html' },
-        { title: 'football', url: 'paiya.net/sports/football.html' },
-        { title: 'golf', url: 'paiya.net/sports/golf.html' },
-        { title: 'padel', url: 'paiya.net/sports/padel.html' },
-        { title: 'swimming', url: 'paiya.net/sports/swimming.html' },
-        { title: 'tennis', url: 'paiya.net/sports/tennis.html' },
+        { title: 'basketball', url: 'sports/basketball.html' },
+        { title: 'football', url: 'sports/football.html' },
+        { title: 'golf', url: '../sports/golf.html' },
+        { title: 'padel', url: 'sports/padel.html' },
+        { title: 'swimming', url: 'sports/swimming.html' },
+        { title: 'tennis', url: 'sports/tennis.html' },
         // Clubs Pages
-        { title: 'clubs', url: 'paiya.net/clubs/breweries.html' },
+        { title: 'clubs', url: 'clubs/breweries.html' },
+        { title: 'shopping', url: 'shopping/malls.html'},
         // Museums Pages
-        { title: 'art museums', url: 'paiya.net/museums/artmuseums.html' },
-        { title: 'children museums', url: 'paiya.net/museums/childrenmuseums.html' },
-        { title: 'history museums', url: 'paiya.net/museums/historymuseums.html' },
-        { title: 'science museums', url: 'paiya.net/museums/sciencemuseums.html' },
+        { title: 'art museums', url: 'museums/artmuseums.html' },
+        { title: 'children museums', url: 'museums/childrenmuseums.html' },
+        { title: 'history museums', url: 'museums/historymuseums.html' },
+        { title: 'science museums', url: 'museums/sciencemuseums.html' },
         // Parks Pages
-        { title: 'city parks', url: 'paiya.net/parks/cityparks.html' },
-        { title: 'national parks', url: 'paiya.net/parks/nationalparks.html' },
-        { title: 'theme parks', url: 'paiya.net/parks/themeparks.html' },
-        { title: 'water parks', url: 'paiya.net/parks/waterparks.html' },
+        { title: 'city parks', url: 'parks/cityparks.html' },
+        { title: 'national parks', url: 'parks/nationalparks.html' },
+        { title: 'theme parks', url: 'parks/themeparks.html' },
+        { title: 'water parks', url: 'parks/waterparks.html' },
         // Restaurants Pages
-        { title: 'african', url: 'paiya.net/restaurants/african.html' },
-        { title: 'american', url: 'paiya.net/restaurants/american.html' },
-        { title: 'asian', url: 'paiya.net/restaurants/asian.html' },
-        { title: 'european', url: 'paiya.net/restaurants/european.html' },
-        { title: 'indian', url: 'paiya.net/restaurants/indian.html' },
-        { title: 'middle eastern', url: 'paiya.net/restaurants/middleeastern.html' }
+        { title: 'african', url: 'restaurants/african.html' },
+        { title: 'american', url: 'restaurants/american.html' },
+        { title: 'asian', url: 'restaurants/asian.html' },
+        { title: 'european', url: 'restaurants/european.html' },
+        { title: 'indian', url: 'restaurants/indian.html' },
+        { title: 'fast food', url: 'restaurants/fastfood.html' },
+        { title: 'middle eastern', url: 'restaurants/middleeastern.html' }
+        
     ];
-    const searchMapping = {
-        'football': 'paiya.net/sports/football.html',
-        'terrains de football':'paiya.net/sports/football.html',
-        'basketball': 'paiya.net/sports/basketball.html',
-        'terrains de basketball': 'paiya.net/sports/basketball.html',
-        'restaurants': 'paiya.net/restaurants/european.html',
-        'restaurant europeen': 'paiya.net/restaurants/european.html',
-        'clubs': 'paiya.net/clubs/breweries.html',
-        'malls': 'paiya.net/shopping/malls.html'
-    };
 
     const fuse = new Fuse(pages, options);
 
@@ -69,7 +61,7 @@
         }
     }
 
-    function getBasePath(currentPath) {
+        function getBasePath(currentPath) {
         // Find the depth of the current file within the directory structure
         const depth = (currentPath.match(/\//g) || []).length - 1;
 
@@ -81,6 +73,7 @@
 
         return basePath;
     }
+
 
     // Function to check screen size and apply scroll effect only on desktop
     function checkScroll() {
