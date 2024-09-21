@@ -10,7 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('images/background1.jpg') no-repeat fixed center center;
+    background: url('images/background.jpg') no-repeat fixed center center;
     background-size: cover;
     color: #ffffff;
     overflow-y: scroll;
