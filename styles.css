@@ -13,8 +13,8 @@ body {
     background: url('images/background.jpg') no-repeat fixed center center;
     background-size: cover;
     color: #ffffff;
+    overflow-y: scroll;
 }
-
 
 header {
     background-color: rgba(217, 182, 60, 0.9); /* Slightly transparent to see the background */
