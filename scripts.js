@@ -1,3 +1,4 @@
+﻿
 ﻿document.addEventListener('DOMContentLoaded', function() {
     // Initialize Fuse.js for search functionality
     const options = {
