@@ -42,8 +42,7 @@ header.scrolled .header-container {
 }
 
 .logo {
-    width: 50%; /* Or any percentage that works */
-    height: auto; /* Ensures the aspect ratio remains intact */
+    width: 150px;
     margin-bottom: 10px;
     transition: all 0.3s ease; /* Smooth transition */
 }
