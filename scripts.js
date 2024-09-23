@@ -33,7 +33,9 @@
         { title: 'asian', url: 'paiya.net/restaurants/asian.html' },
         { title: 'european', url: 'paiya.net/restaurants/european.html' },
         { title: 'indian', url: 'paiya.net/restaurants/indian.html' },
-        { title: 'middle eastern', url: 'paiya.net/restaurants/middleeastern.html' }
+        { title: 'middle eastern', url: 'paiya.net/restaurants/middleeastern.html' },
+        { title: 'aventure', url: 'paiya.net/activities/aventure.html'},
+        { title: 'cinema', url: 'paiya.net/activities/cinemas.html'}
     ];
     const searchMapping = {
         'football': 'paiya.net/sports/football.html',
