@@ -804,7 +804,7 @@ a {
   /* Make footer stretch across the screen */
   footer {
     width: 100%; /* Ensure footer covers the full width */
-    max-width: 1440px; /* Set a maximum width for readability */
+    max-width: 2300px; /* Set a maximum width for readability */
     margin: 0 auto; /* Center the footer content */
     padding: 40px 20px; /* Consistent padding */
   }
