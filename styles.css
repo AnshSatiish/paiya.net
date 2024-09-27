@@ -766,3 +766,46 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+
+/* Styles for large monitors (above 1440px) */
+@media (min-width: 1440px) {
+  
+  /* Adjust the body font size and padding for larger screens */
+  body {
+    font-size: 18px; /* Increase font size for readability */
+    padding: 40px 20px; /* Adjust padding (smaller horizontal padding) */
+  }
+
+  /* Ensure container does not stretch too much, keep centered */
+  .container {
+    max-width: 1280px; /* Prevent container from stretching too wide */
+    margin: 0 auto; /* Center the content */
+  }
+
+  /* Adjust padding for header and footer on bigger screens */
+  .header, .footer {
+    padding: 40px 20px; /* Adjust padding to fit better on large screens */
+  }
+
+  /* Ensure images are responsive and fit within container */
+  .image-class {
+    width: 100%; /* Ensure images fill their container */
+    max-width: 1280px; /* Prevent images from being too wide */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Ensure the page container takes up the full viewport height */
+  .page-container {
+    min-height: 100vh; /* Ensure full height for large monitors */
+    padding-bottom: 40px; /* Add some padding to avoid footer overlap */
+  }
+
+  /* Make footer stretch across the screen */
+  footer {
+    width: 100%; /* Ensure footer covers the full width */
+    max-width: 1440px; /* Set a maximum width for readability */
+    margin: 0 auto; /* Center the footer content */
+    padding: 40px 20px; /* Consistent padding */
+  }
+}
