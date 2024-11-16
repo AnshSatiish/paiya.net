@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaiyaNet</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Global CSS -->
+    <link rel="stylesheet" href="styling.css"> <!-- Global CSS -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="/images/favicon.png">
     <base href="https://paiyanet.com/">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2933911693699109" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2933911693699109"
+     crossorigin="anonymous"></script>
 </head>
-
 <body>
     <header>
         <div class="header-container">
@@ -20,15 +19,15 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <a href="https://paiyanet.com/">
-                <img alt="Logo Paiya.net" src="images/imagepaiya.net.png" class="logo">
-            </a>
+            <a href="https://paiyanet.com/"> <img alt="Logo Paiya.net" src="images/imagepaiya.net.png" class="logo"></a>
             <div class="search-container">
                 <input type="text" id="searchBar" placeholder="Rechercher des lieux...">
                 <div class="loading-circle" id="loadingCircle"></div>
                 <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-            <div class="result-box"></div>
+            
+            <div class="result-box">
+            </div>
         </div>
         <nav class="hidden">
             <div class="nav-header">
@@ -37,7 +36,7 @@
             <ul class="menu">
                 <li class="menu-item">Restaurants
                     <ul class="dropdown">
-                        <a href="restaurants/european.html"><li>Européen</li></a> 
+                        <a href="restaurants/european.html"> <li>Européen</li></a> 
                         <a href="restaurants/asian.html"><li>Asiatique</li></a> 
                         <a href="restaurants/desserts.html"><li>Desserts</li></a>
                         <a href="restaurants/indian.html"><li>Indien</li></a> 
@@ -47,61 +46,67 @@
                 <li class="menu-item"><a href="shopping/malls.html">Centres Commerciaux</a></li>
                 <li class="menu-item">Sports
                     <ul class="dropdown">
-                        <a href="sports/football.html"><li>Football</li></a> 
-                        <a href="sports/basketball.html"><li>Basketball</li></a> 
-                        <a href="sports/tennis.html"><li>Tennis</li></a> 
-                        <a href="sports/golf.html"><li>Golf</li></a> 
-                        <a href="sports/padel.html"><li>Padel</li></a> 
-                        <a href="sports/swimming.html"><li>Natation</li></a> 
+                        <a href="sports/football.html"> <li>Football</li></a> 
+                        <a href="sports/basketball.html"> <li>Basketball</li></a> 
+                        <a href="sports/tennis.html"> <li>Tennis</li></a> 
+                        <a href="sports/golf.html"> <li>Golf</li></a> 
+                        <a href="sports/padel.html"> <li>Padel</li></a> 
+                        <a href="sports/swimming.html"> <li>Natation</li></a> 
                     </ul>
                 </li>
                 <li class="menu-item"><a href="clubs/breweries.html">Clubs</a></li>
                 <li class="menu-item"><a href="museums/artmuseums.html">Musées</a></li>
                 <li class="menu-item">Activités de Divertissement
                     <ul class="dropdown">
-                        <a href="activities/cinemas.html"><li data-translate="football">Expériences Cinématographiques & Écran</li></a> 
-                        <a href="activities/aventure.html"><li data-translate="basketball">Action & Aventure</li></a> 
+                        <a href="activities/cinemas.html"> <li data-translate="football">Expériences Cinématographiques & Écran</li></a> 
+                        <a href="activities/aventure.html"> <li data-translate="basketball">Action & Aventure</li></a> 
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <div class="articles-container active" id="tab1">
-            <article class="restaurant-card">
-                <img src="images/news1.jpg" alt="News Image 1">
-                <div>
-                    <h3>Explorez les Meilleurs Restaurants</h3>
-                    <p>Découvrez les meilleures expériences culinaires autour de vous.</p>
-                </div>
-            </article>
-            <!-- Additional articles for tab 1 can be added here -->
-        </div>
-
-        <div class="articles-container" id="tab2">
-            <article class="restaurant-card">
-                <img src="images/news2.jpg" alt="News Image 2">
-                <div>
-                    <h3>Dernières Offres Shopping</h3>
-                    <p>Découvrez les meilleures offres et réductions dans les magasins près de chez vous.</p>
-                </div>
-            </article>
-            <!-- Additional articles for tab 2 can be added here -->
-        </div>
-
-        <div class="articles-container" id="tab3">
-            <article class="restaurant-card">
-                <img src="images/news3.jpg" alt="News Image 3">
-                <div>
-                    <h3>Installations Sportives</h3>
-                    <p>Trouvez les meilleurs endroits pour pratiquer vos sports favoris.</p>
-                </div>
-            </article>
-            <!-- Additional articles for tab 3 can be added here -->
-        </div>
+        <h1 data-translate="welcome_message">Bienvenue sur Paiyanet.com</h1>
+        <p data-translate="intro_message">Trouvez les meilleurs restaurants, bars, installations sportives, cinémas, et plus encore.</p>
+        <section class="content">
+            <a href="restaurants/european.html">
+                <article>
+                    <h2 data-translate="top_restaurants">Explorez les Meilleurs Restaurants</h2>
+                    <p data-translate="restaurant_description">Découvrez les meilleures expériences culinaires autour de vous.</p>
+                </article>
+            </a>
+            <a href="shopping/malls.html">
+                <article>
+                    <h2 data-translate="shopping_deals">Dernières Offres Shopping</h2>
+                    <p data-translate="shopping_description">Découvrez les meilleures offres et réductions dans les magasins près de chez vous.</p>
+                </article>
+            </a>
+            <a href="sports/football.html">
+                <article>
+                    <h2 data-translate="sports_facilities">Installations Sportives</h2>
+                    <p data-translate="sports_description">Trouvez les meilleurs endroits pour pratiquer vos sports favoris.</p>
+                </article>
+            </a>
+            <a href="clubs/breweries.html">
+                <article>
+                    <h2 data-translate="nightlife_bars">Vie Nocturne et Bars</h2>
+                    <p data-translate="nightlife_description">Découvrez la vie nocturne vibrante avec les meilleurs bars et clubs.</p>
+                </article>
+            </a>
+            <a href="museums/artmuseums.html">
+                <article>
+                    <h2 data-translate="interesting_museums">Musées Intéressants</h2>
+                    <p data-translate="museums_description">Visitez les musées les plus intéressants et apprenez de nouvelles choses.</p>
+                </article>
+            </a>
+            <a href="">
+                <article>
+                    <h2 data-translate="upcoming_events">Événements à Venir</h2>
+                    <p data-translate="events_description">Restez informé des derniers événements dans votre ville.</p>
+                </article>
+            </a>
+        </section>
     </main>
-
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 Paiyanet. Tous droits réservés.</p>
@@ -110,23 +115,9 @@
             </a>
         </div>
     </footer>
-
+    
     <script src="scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
     <script src="https://kit.fontawesome.com/c5d75141a2.js" crossorigin="anonymous"></script>
-    <script>
-        const tabs = document.querySelectorAll('.tab');
-        const articlesContainers = document.querySelectorAll('.articles-container');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                tabs.forEach(t => t.classList.remove('active'));
-                articlesContainers.forEach(container => container.classList.remove('active'));
-
-                tab.classList.add('active');
-                document.getElementById(tab.dataset.tab).classList.add('active');
-            });
-        });
-    </script>
 </body>
 </html>
