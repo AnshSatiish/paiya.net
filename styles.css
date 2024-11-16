@@ -1,11 +1,3 @@
-/* Base styles */
-body[lang="fr"] .english {
-    display: none;
-}
-body[lang="fr"] .french {
-    display: block;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -15,8 +7,6 @@ body {
     color: #ffffff;
     overflow-y: scroll;
 }
-
-
 header {
     background-color: rgba(217, 182, 60, 0.9); /* Slightly transparent to see the background */
     padding: auto;
@@ -27,33 +17,27 @@ header {
     z-index: 1000;
     transition: all 0.2s ease; /* Smooth transition */
 }
-
 .header-container {
     display: flex;
     align-items: center; /* Align items to the bottom */
     justify-content: space-between;
     flex-direction: column;
 }
-
 header.scrolled .header-container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center; /* Center items vertically */
 }
-
 .logo {
     width: 150px;
     margin-bottom: 10px;
     transition: all 0.3s ease; /* Smooth transition */
 }
-
-
 header.scrolled .logo {
     width: 100px;
     margin-bottom: 0;
     margin-left: 20px;
 }
-
 .search-container {
     width: 100%;
     display: flex;
@@ -61,7 +45,6 @@ header.scrolled .logo {
     margin-bottom: 10px;
     transition: all 0.3s ease;
 }
-
 .search-container input {
     width: 100%;
     max-width: 600px; /* adjust this value as needed */
@@ -70,13 +53,11 @@ header.scrolled .logo {
     padding: 10px 20px; 
     border-radius: 20px; 
 }
-
 header.scrolled .search-container {
     width: 100%; /* Adjust width on scroll */
     justify-content: flex-start; /* Align search bar next to logo */
     margin-bottom: 0;
 }
-
 #searchBar {
     padding: 15px;
     font-size: 16px;
@@ -90,33 +71,17 @@ header.scrolled .search-container {
     margin-left: 20px; /* Space between logo and search bar */
     box-sizing: border-box;
 }
-
-#searchButton
-{
-    background: transparent;
-    border: none;
-}
-
-button .fa-solid{
-    width: 25px;
-    color: #555;
-    font-size: 22px;
-    cursor: pointer;
-}
-
 header.scrolled #searchBar {
     position: relative;
     width: auto; /* Adjusted width */
     padding: 10px; /* Optional padding for spacing inside the searchBar */
 }
-
 .menu-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
 .menu-toggle .bar {
     height: 3px;
     width: 25px;
@@ -124,7 +89,6 @@ header.scrolled #searchBar {
     margin: 4px 0;
     transition: all 0.3s ease;
 }
-
 nav {
     display: flex;
     justify-content: center;
@@ -132,11 +96,9 @@ nav {
     width: 100%;
     transition: all 0.3s ease; /* Smooth transition */
 }
-
 header.scrolled nav {
     justify-content: flex-end; /* Move nav to the right on scroll */
 }
-
 .menu {
     list-style: none;
     display: flex;
@@ -146,42 +108,15 @@ header.scrolled nav {
     margin: 0;
     flex-wrap: wrap;
 }
-
 .menu-item {
     position: relative;
     padding: 10px 20px;
     cursor: pointer;
     transition: color 0.3s ease;
 }
-
 .menu-item:hover {
     color: #ffffff;
 }
-
-/* Loading circle */
-.loading-circle {
-    display: none; /* Hidden by default */
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-top: 4px solid #555;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    animation: spin 1s linear infinite;
-    margin-left: 10px;
-}
-
-/* Keyframes for spinning effect */
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
-
 .dropdown {
     display: none;
     position: absolute;
@@ -195,33 +130,27 @@ header.scrolled nav {
     margin: 0;
     min-width: 150px;
 }
-
 .dropdown li {
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
     color: #000000;
 }
-
 .dropdown li:hover {
     background-color: #d9b63c;
     color: #ffffff;
 }
-
 .dropdown a {
     text-decoration: none;
 }
-
 .menu-item:hover .dropdown {
     display: block;
 }
-
 main {
     padding: 20px;
     text-align: center;
     margin-top: 150px; /* Adjusted for fixed header and search bar */
 }
-
 .restaurant-card {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
@@ -230,34 +159,30 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%; /* Ensure cards take full width of grid column */
     margin: 0; /* Remove margin as grid will handle spacing */
     text-align: center;
      transition: transform 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
     opacity: 1; /* Smooth animation on transform */
 }
-
 .restaurant-card:hover {
     transform: scale(1.05); /* Scale up the card on hover */
     opacity: 0.9; 
 }
-
 .restaurant-image {
-    width: 700px;
+    width: 100%;
     height: 300px; /* Set a fixed height for all images */
     object-fit: cover; /* Ensure images cover the entire area without distortion */
     border-radius: 10px;
 }
-
 .restaurant-info {
     margin-top: 15px;
 }
-
 .restaurant-header {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .restaurant-category {
     background-color: #D9B63C;
     padding: 5px 10px;
@@ -266,35 +191,29 @@ main {
     margin-bottom: 10px;
     font-weight: bold;
 }
-
 .restaurant-name {
     margin: 0;
     font-size: 1.5em;
     color: #333;
 }
-
 .restaurant-location {
     font-size: 1em;
     margin: 10px 0;
     color: #666;
 }
-
 .restaurant-description {
     font-size: 1em;
     color: #666;
 }
-
 .restaurant-contact a {
     text-decoration: none;
     color: inherit;
 }
-
 .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px; /* Reduced gap between articles */
 }
-
 article {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
@@ -305,22 +224,18 @@ article {
     color: #000;
     text-decoration: none;
 }
-
 article h2 {
     margin-top: 0;
     font-size: 1.5rem;
 }
-
 article:hover {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
 article p {
     margin-bottom: 0;
     font-size: 1rem;
 }
-
 footer {
     background-color: rgba(217, 182, 60, 0.9);
     color: #ffffff;
@@ -330,7 +245,6 @@ footer {
     width: 100%;
     bottom: 0;
 }
-
 /* Mobile specific styles */
 @media (max-width: 768px) {
     .header-container {
@@ -340,14 +254,12 @@ footer {
         justify-content: space-between;
         padding: 5px;
     }
-
     .menu-toggle {
         display: flex;
         justify-content: center;
         cursor: pointer;
         margin-bottom: 10px;
     }
-
     .logo {
         width: 150px;
         order: 2;
@@ -355,24 +267,20 @@ footer {
         margin-bottom: 0;
         margin-left: 50px;
     }
-
     .search-container {
         order: 3; /* Ensure the search bar is on the right */
         flex-grow: 1; /* Allow the search bar to take up available space */
         display: flex;
         justify-content: flex-end;
     }
-
     #searchBar {
         width: 100%;
         max-width: 200px;
         font-size: 14px;
     }
-
     .menu-item {
         width: 100%;
     }
-
     .dropdown {
         display: none;
         position: relative;
@@ -388,12 +296,10 @@ footer {
         overflow: hidden;
         max-height: 0;
     }
-
     .menu-item.active .dropdown {
         display: block;
         max-height: 500px;
     }
-
     .dropdown li {
         padding: 10px 20px;
         cursor: pointer;
@@ -401,16 +307,13 @@ footer {
         color: #000000;
         text-align: center;
     }
-
     .dropdown li:hover {
         background-color: #d9b63c;
         color: #ffffff;
     }
-
     .menu-item.active .dropdown {
         display: block;
     }
-
     nav {
         display: none;
         flex-direction: column;
@@ -429,19 +332,16 @@ footer {
         padding: 20px;
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
     }
-
     nav.active {
         display: flex;
         transform: translateX(0);
     }
-
     .content {
         display: flex;
         flex-direction: column;
         gap: 20px;
         margin-top: 20px;
     }
-
     .nav-header {
         display: flex;
         justify-content: space-between;
@@ -449,13 +349,11 @@ footer {
         padding: 10px 0;
         align-items: center;
     }
-
     .language-selector {
         display: flex;
         flex-direction: column;
         margin-bottom: 10px;
     }
-
     .close-menu {
         font-size: 24px;
         cursor: pointer;
@@ -464,7 +362,6 @@ footer {
         top: 10px;
         right: 20px;
     }
-
     .language-button {
         font-size: 14px;
         background-color: #d9b63c;
@@ -479,7 +376,6 @@ footer {
         top: 10px;
         left: 20px;
     }
-
     .language-dropdown {
         display: none;
         position: absolute;
@@ -490,11 +386,9 @@ footer {
         border-radius: 5px;
         z-index: 1000;
     }
-
     .language-dropdown.active {
         display: block;
     }
-
     .language-dropdown button {
         font-size: 14px;
         background-color: #fff;
@@ -505,12 +399,10 @@ footer {
         text-align: left;
         cursor: pointer;
     }
-
     .language-dropdown button:hover {
         background-color: #d9b63c;
         color: #fff;
     }
-
     nav ul.menu {
         margin-top: 60px;
         padding: 0;
@@ -519,14 +411,12 @@ footer {
         top: 60px;
         left: 0;
     }
-
     nav .menu {
         margin: 0;
         padding: 0;
         list-style: none;
         width: 100%;
     }
-
     nav .menu-item {
         padding: 10px 20px;
         width: 100%;
@@ -536,32 +426,26 @@ footer {
         position: relative;
         flex-direction: column;
     }
-
     nav .menu-item a {
         display: block;
         width: 100%;
         text-decoration: none;
         color: #fff;
     }
-
     nav .menu-item a:hover {
         background-color: #d9b63c;
         color: #fff;
     }
-
     nav .menu-item .dropdown a {
         padding-left: 20px;
         color: #000;
     }
-
     .menu-item .dropdown {
         display: none;
     }
-
     .menu-item.active .dropdown {
         display: block;
     }
-
     .overlay {
         position: fixed;
         top: 0;
@@ -572,22 +456,18 @@ footer {
         z-index: 998;
         display: none;
     }
-
     .overlay.active {
         display: block;
     }
-
     main {
         padding: 20px;
         text-align: center;
         margin-top: 100px;
     }
 }
-
 /* Hide the close button in desktop view */
 /* Desktop specific styles */
 @media (min-width: 769px) {
-
     .close-menu
     {
         display: none;
@@ -595,7 +475,6 @@ footer {
     .language-selector {
         position: relative;
     }
-
     .language-button {
         font-size: 14px;
         background-color: #d9b63c; /* Match with the page style */
@@ -605,7 +484,6 @@ footer {
         border-radius: 5px;
         cursor: pointer;
     }
-
     .language-dropdown {
         display: none;
         position: absolute;
@@ -616,12 +494,10 @@ footer {
         border-radius: 5px;
         z-index: 1000;
     }
-
     .language-selector:hover .language-dropdown,
     .language-button:focus + .language-dropdown {
         display: block;
     }
-
     .language-dropdown button {
         font-size: 14px;
         background-color: #fff;
@@ -632,31 +508,26 @@ footer {
         text-align: left;
         cursor: pointer;
     }
-
     .language-dropdown button:hover {
         background-color: #d9b63c;
         color: #fff;
     }
 }
-
 .menu-item > a {
     text-decoration: none;
     color: inherit;
     padding: 10px 20px;
     display: block;
 }
-
 .menu-item > a:hover {
     color: #ffffff;
 }
-
 /* Desktop view adjustments */
 nav {
     display: flex;
     justify-content: center;
     align-items: center; /* Center items vertically */
 }
-
 .menu {
     list-style: none;
     display: flex;
@@ -666,7 +537,6 @@ nav {
     margin: 0;
     flex-wrap: wrap;
 }
-
 .menu-item {
     position: relative;
     padding: 10px 20px;
@@ -675,27 +545,22 @@ nav {
     display: flex;
     align-items: center; /* Center items vertically */
 }
-
 .menu-item > a {
     text-decoration: none;
     color: inherit;
     display: block;
 }
-
 .menu-item > a:hover {
     color: #ffffff;
 }
-
 .instagram-logo {
     width: 30px; /* Adjust the size as needed */
     height: auto;
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
-
 .instagram-logo:hover {
     transform: scale(1.1); /* Slightly enlarge the logo on hover */
 }
-
 /* Mobile view adjustments */
 @media (max-width: 768px) {
     nav {
@@ -707,53 +572,20 @@ nav {
         align-items: center;
         justify-content: center;
     }
-
     nav.active {
         display: flex; /* Display nav when active */
     }
-
     .menu {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-
     .menu-item {
         padding: 5px 10px;
         cursor: pointer;
         position: relative;
     }
-    
-    .restaurant-card {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0; /* Remove margin as grid will handle spacing */
-    text-align: center;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    opacity: 1;
-    overflow: hidden; /* Ensure content stays within the card */
-}
-
-.restaurant-card:hover {
-    transform: scale(1.05);
-    opacity: 0.9; 
-}
-
-.restaurant-image {
-    width: 100%; /* Ensure the image takes full width of the card */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 150px; /* Set a maximum height to avoid excessively tall images */
-    border-radius: 10px;
-    object-fit: cover; /* Ensure image covers the area without distortion */
-}
-
-
     .menu-toggle {
         display: flex;
         justify-content: center;
@@ -761,51 +593,7 @@ nav {
         margin-bottom: 10px;
     }
 }
-
 a {
     text-decoration: none;
     color: inherit;
-}
-
-
-/* Styles for large monitors (above 1440px) */
-@media (min-width: 1440px) {
-  
-  /* Adjust the body font size and padding for larger screens */
-  body {
-    font-size: 18px; /* Increase font size for readability */
-    padding: 40px 20px; /* Adjust padding (smaller horizontal padding) */
-  }
-
-  /* Ensure container does not stretch too much, keep centered */
-  .container {
-    max-width: 1280px; /* Prevent container from stretching too wide */
-    margin: 0 auto; /* Center the content */
-  }
-
-  /* Adjust padding for header and footer on bigger screens */
-  .header, .footer {
-    padding: 40px 20px; /* Adjust padding to fit better on large screens */
-  }
-
-  /* Ensure images are responsive and fit within container */
-  .image-class {
-    width: 100%; /* Ensure images fill their container */
-    max-width: 1280px; /* Prevent images from being too wide */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  /* Ensure the page container takes up the full viewport height */
-  .page-container {
-    min-height: 100vh; /* Ensure full height for large monitors */
-    padding-bottom: 40px; /* Add some padding to avoid footer overlap */
-  }
-
-  /* Make footer stretch across the screen */
-  footer {
-    width: 100%; /* Ensure footer covers the full width */
-    max-width: 2300px; /* Set a maximum width for readability */
-    margin: 0 auto; /* Center the footer content */
-    padding: 40px 20px; /* Consistent padding */
-  }
 }
